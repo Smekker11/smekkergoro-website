@@ -1,0 +1,22 @@
+body{
+    background-image: url('coffee-bean.bmp');
+}
+#div-menu{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    height: 50%;
+    background-image: url('menu-div.bmp');
+}
+#ip{
+    position: relative;
+    text-align: center;
+    bottom: 20px;
+}
+#plinks{
+    position: relative;
+    text-align: center;
+    bottom: 40px;
+}
