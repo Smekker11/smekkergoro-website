@@ -7,7 +7,6 @@ body{
     width: 50%;
     border: 3px solid black;
     padding: 10px;
-    height: 50%;
     background-image: url('menu-div.bmp');
 }
 #ip{
@@ -20,3 +19,69 @@ body{
     text-align: center;
     bottom: 40px;
 }
+#github{
+    position: relative;
+    text-align: center;
+    display: block;
+    color: lime;
+    bottom: 60px;
+}
+#hrusc{
+    position: relative;
+    text-align: center;
+    display: block;
+    color: blue;
+    bottom: 60px;
+}
+#idrac{
+    position: relative;
+    text-align: center;
+    display: block;
+    color: lightgreen;
+    bottom: 60px;
+}
+#iplog{
+    position: relative;
+    text-align: center;
+    display: block;
+    color: black;
+    bottom: 60px;
+}
+#map{
+    position: relative;
+    text-align: center;
+    display: block;
+    color: blueviolet;
+    bottom: 60px;
+    font-size: 22px;
+}
+#fold{
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 20%;
+    width: 20%;
+}
+#figyelem{
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 10%;
+    width: 10%;
+}
+#div-bongus{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    background: rgb(156, 81, 44, 0.5);
+    padding: 10px; 
+}
+#amgussy{
+    position: relative;
+    display: block;
+    margin: auto; 
+    height: 80%;
+    width: 100%;
+}
+
