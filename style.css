@@ -4,7 +4,7 @@ body{
 #div-menu{
     position: relative;
     margin: auto;
-    width: 50%;
+    width: 80%;
     border: 3px solid black;
     padding: 10px;
     background-image: url('menu-div.bmp');
@@ -72,7 +72,7 @@ body{
 #div-bongus{
     position: relative;
     margin: auto;
-    width: 50%;
+    width: 80%;
     border: 3px solid black;
     background: rgb(156, 81, 44, 0.5);
     padding: 10px; 
