@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <marquee style="color: red;" bgcolor="yellow">
+        <?php
+         $ip = $_SERVER['REMOTE_ADDR'];
+         $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+         echo "IP: " , $ip , " || " , "COUNTRY: " , $details->country , " || " , "REGION: " , $details->region , " || " , "CITY: " , $details->city;
+         ?>
+        </marquee>
         <h1 style="color: yellow;" align="center">site mekke mobile<h1>
         <div id="div-menu">
         <img src="figyelem.gif" id="figyelem"></img>
