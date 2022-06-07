@@ -3,12 +3,10 @@ body{
 }
 .holland{
     position: relative;
-    margin: auto;
-    width: 80%;
-    border: 3px solid black;
     background: rgb(156, 81, 44, 0.5);
     border: 3px solid black;
-    padding: 10px;
+    margin: auto;
+    width: 80%;
 }
 #cataclysm{
     position: relative;
