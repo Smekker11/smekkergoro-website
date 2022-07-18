@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <!--marquee part-->
         <marquee style="color: red;" bgcolor="yellow">
         <?php
          $ip = $_SERVER['REMOTE_ADDR'];
@@ -12,12 +13,22 @@
          echo "IP: " , $ip , " || " , "COUNTRY: " , $details->country , " || " , "REGION: " , $details->region , " || " , "CITY: " , $details->city;
          ?>
         </marquee>
-        <h1 style="color: yellow;" align="center">site mekke mobile<h1>
-        <div class="holland">
-         <img id="cataclysm" src="mencke-cataclysm.jpg"></img>
-         <h1 align="center" style="color: red; background-color: orange;">the fat of the fard</h1>
-         <p align="center" style="color: black; background-color: green;">the holland fatass menace has finally returned from cardboard wordpress</p>
-        </div>
+        <!--marquee part-->
+        <h1 style="color: yellow;" align="center">site mekke mobile - <?php
+          require "sqll.php";
+          $conn = new mysqli($servername, $username, $password, $dbname);
+          if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+          }  
+          $sql = "SELECT content FROM sitequotes WHERE quote='mekkemsg'";
+          $result = $conn->query($sql);
+          if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                echo $row["content"];
+            }
+          }
+          $conn->close();
+        ?> <h1>
         <div id="div-menu">
         <img src="figyelem.gif" id="figyelem"></img>
             <h5 id="ip">IP IS:
@@ -44,6 +55,27 @@
                 sussy.play();
              }
             </script>
+        </div>
+        <div class="holland">
+         <img id="cataclysm" src="mencke-cataclysm.jpg"></img>
+         <h1 align="center" style="color: red; background-color: orange;">Changelog:</h1>
+         <p align="center" style="color: black; background-color: green;">
+         <?php 
+        require "sqll.php";
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+        } 
+        $sql = "SELECT content FROM sitequotes WHERE quote='changelog'";
+        $result = $conn->query($sql);
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                echo $row["content"];
+            }
+        }
+        $conn->close();
+         ?>
+         </p><!--changelog p--><!--changelog p-->
         </div>
     </body>
 </html>
