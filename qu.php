@@ -12,7 +12,6 @@ $result = $conn->query($sql);
 if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
         $changelog = $row["content"];
-        echo $changelog;
     }
 }
 
@@ -23,7 +22,6 @@ $result = $conn->query($sql);
 if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
         $mekkemsg = $row["content"];
-        echo $mekkemsg;
     }
 }
 
