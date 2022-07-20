@@ -3,6 +3,15 @@
         <title>mekke pe caramida</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="msvalidate.01" content="C46FB74BB06201E413EE7410D04742BC" />
+        <meta name="google-site-verification" content="4tc7m9iXhATLDJ1HUaG3wVLPXmu-vm_V8vOnne2ujBc" />
     </head>
     <body>
         <!--marquee part-->
@@ -15,19 +24,8 @@
         </marquee>
         <!--marquee part-->
         <h1 style="color: yellow;" align="center">site mekke mobile - <?php
-          require "sqll.php";
-          $conn = new mysqli($servername, $username, $password, $dbname);
-          if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-          }  
-          $sql = "SELECT content FROM sitequotes WHERE quote='mekkemsg'";
-          $result = $conn->query($sql);
-          if($result->num_rows > 0){
-            while($row = $result->fetch_assoc()){
-                echo $row["content"];
-            }
-          }
-          $conn->close();
+          require "qu.php";
+          echo $mekkemsg;
         ?> <h1>
         <div id="div-menu">
         <img src="figyelem.gif" id="figyelem"></img>
@@ -61,19 +59,8 @@
          <h1 align="center" style="color: red; background-color: orange;">Changelog:</h1>
          <p align="center" style="color: black; background-color: green;">
          <?php 
-        require "sqll.php";
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-        } 
-        $sql = "SELECT content FROM sitequotes WHERE quote='changelog'";
-        $result = $conn->query($sql);
-        if($result->num_rows > 0){
-            while($row = $result->fetch_assoc()){
-                echo $row["content"];
-            }
-        }
-        $conn->close();
+        require "qu.php";
+        echo $changelog;
          ?>
          </p><!--changelog p--><!--changelog p-->
         </div>
