@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title><?php require "qu.php"; echo $title; ?></title>
+        <title><?php require "qu.php"; echo $title; ?></title><!--title-->
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -22,11 +22,11 @@
          echo "IP: " , $ip , " || " , "COUNTRY: " , $details->country , " || " , "REGION: " , $details->region , " || " , "CITY: " , $details->city;
          ?>
         </marquee>
-        <!--marquee part-->
+        <!--marquee part--><!--mekkemsg-->
         <h1 style="color: yellow;" align="center">site mekke mobile - <?php
           require "qu.php";
           echo $mekkemsg;
-        ?> <h1>
+        ?> <h1><!--mekkemsg-->
         <div id="div-menu">
         <img src="figyelem.gif" id="figyelem"></img>
             <h5 id="ip">IP IS:
@@ -57,12 +57,12 @@
         <div class="holland">
          <img id="cataclysm" src="mencke-cataclysm.jpg"></img>
          <h1 align="center" style="color: red; background-color: orange;">Changelog:</h1>
-         <p align="center" style="color: black; background-color: green;">
+         <p align="center" style="color: black; background-color: green;"><!--changelog p-->
          <?php 
         require "qu.php";
         echo $changelog;
          ?>
-         </p><!--changelog p--><!--changelog p-->
+         </p><!--changelog p-->
         </div>
     </body>
 </html>
