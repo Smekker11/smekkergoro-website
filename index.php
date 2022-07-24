@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>mekke pe caramida</title>
+        <title><?php require "qu.php"; echo $title; ?></title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
