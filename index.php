@@ -23,10 +23,10 @@
          ?>
         </marquee>
         <!--marquee part--><!--mekkemsg-->
-        <h1 style="color: yellow;" align="center">site mekke mobile - <?php
+        <h1 style="color: yellow;" align="center">site mekke mobile - <span class="mekkemsg"> <?php
           require "qu.php";
           echo $mekkemsg;
-        ?> <h1><!--mekkemsg-->
+        ?></span><h1><!--mekkemsg-->
         <div id="div-menu">
         <img src="figyelem.gif" id="figyelem"></img>
             <h5 id="ip">IP IS:
@@ -37,7 +37,7 @@
             </h5>
             <h5 id="plinks" style="color: orange;">PAGE LINKS:</h5>
             <a href="https://github.com/Smekker11/" id="github">Github</a>
-            <a href="http://smekker.go.ro/old-home/hrusca-pusca/" id="hrusc">Hrusca Pusca</a>
+            <a href="http://smekker.go.ro/hrusca-pusca/" id="hrusc">Hrusca Pusca</a>
             <a href="https://smekker.go.ro:420/" id="idrac">iDRAC</a>
             <a href="http://smekker.go.ro/api" id="iplog">random IP from DB :)</a>
             <a href="http://smekker.go.ro:8123/" id="map">MAP 2kbps</a>

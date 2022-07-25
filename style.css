@@ -8,6 +8,14 @@ body{
     margin: auto;
     width: 80%;
 }
+.mekkemsg{
+    animation: cur 5s infinite;
+    animation-direction: alternate;
+}
+@keyframes cur {
+    50%  {transform: rotate(20deg);}
+    100%  {transform: rotate(-20deg);}    
+}
 #cataclysm{
     position: relative;
     display: block;
