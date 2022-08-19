@@ -113,4 +113,11 @@ body{
     font-size: 16px;
     margin: 4px 2px;
 }
-
+#ppl-msg{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    border: 3px solid black;
+    padding: 10px;
+    background: rgb(156, 81, 44, 0.5);
+}

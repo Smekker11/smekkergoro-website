@@ -27,6 +27,18 @@
           require "qu.php";
           echo $mekkemsg;
         ?></span><h1><!--mekkemsg-->
+        <div id="ppl-msg">
+        <h3 align="center">
+            <?php
+            require "qu.php";
+            echo $guestusr;
+            ?>
+        </h3>
+        <form method="post" action="qu.php">
+            <label for="guestusr">modify this message:</label><br>
+            <input type="text" id="guestusr-i" name="guestusr">
+            <input type="submit" value="Submit">
+        </div>
         <div id="div-menu">
         <img src="figyelem.gif" id="figyelem"></img>
             <h5 id="ip">IP IS:
