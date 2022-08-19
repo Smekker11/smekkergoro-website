@@ -12,6 +12,8 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="msvalidate.01" content="C46FB74BB06201E413EE7410D04742BC" />
         <meta name="google-site-verification" content="4tc7m9iXhATLDJ1HUaG3wVLPXmu-vm_V8vOnne2ujBc" />
+        <meta name="keywords" content="mekker, smekker, smekker11, amangas, amogus, sus" />
+        <meta name="description" content="Mekker website very the funny, enjoyable mekk content.">
     </head>
     <body>
         <!--marquee part-->
