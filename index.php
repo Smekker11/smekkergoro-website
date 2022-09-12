@@ -53,7 +53,7 @@
             <a href="https://github.com/Smekker11/" id="github">Github</a>
             <a href="https://smekker.go.ro/hrusca-pusca/" id="hrusc">Hrusca Pusca</a>
             <a href="https://smekker.go.ro:420/" id="idrac">iDRAC</a>
-            <a href="https://smekker.go.ro/api" id="iplog">random IP from DB :)</a>
+            <a href="https://smekker.go.ro/vue-mekke-api" id="iplog">random IP from DB :)</a>
             <a href="http://smekker.go.ro:8123/" id="map">MAP 2kbps</a>
             <img src="fold.gif" id="fold"></img>
         </div>
