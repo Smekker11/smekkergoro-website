@@ -23,7 +23,7 @@
         $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
         //ip queries
         $existq = "SELECT * FROM ips WHERE IP='$ip'";
-        $insetip = "INSERT INTO ips (IP,CountryCode,location) VALUES ('$ip','$details->CountryCode','$details->region')";
+        $insetip = "INSERT INTO ips (IP,CountryCode,Region) VALUES ('$ip','$details->country','$details->region')";
         //mysqlireqs
         $resulte = $conn->query($existq);
         if($resulte->num_rows == 0){
