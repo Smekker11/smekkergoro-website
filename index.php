@@ -26,7 +26,7 @@
         $insetip = "INSERT INTO ips (IP,CountryCode,location) VALUES ('$ip','$details->CountryCode','$details->region')";
         //mysqlireqs
         $resulte = $conn->query($existq);
-        if($resulte == 0){
+        if($resulte->num_rows == 0){
             if ($conn->query($insetip) === TRUE) {
                 echo "New record created successfully";
               } else {
