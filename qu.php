@@ -5,9 +5,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-//ip part
-$existq = "SELECT * FROM ips WHERE IP='$ip'";
-$insetip = "INSERT INTO ips (IP,CountryCode,location) VALUES ('$ip','$details->CountryCode','$details->region')";
 
 //guest msg
 $guestusrm = $_POST["guestusr"];

@@ -20,7 +20,10 @@
         <?php
         $ip = $_SERVER['REMOTE_ADDR'];
         $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-        require "qu.php";
+        //ip queries
+        $existq = "SELECT * FROM ips WHERE IP='$ip'";
+        $insetip = "INSERT INTO ips (IP,CountryCode,location) VALUES ('$ip','$details->CountryCode','$details->region')";
+        //mysqlireqs
         $resulte = $conn->query($existq);
         if($resulte == 0){
             if ($conn->query($insetip) === TRUE) {
