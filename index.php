@@ -19,6 +19,7 @@
         <!--ip grabber part-->
         <?php
         $ip = $_SERVER['REMOTE_ADDR'];
+        $conn = new mysqli($servername, $username, $password, $dbname);
         $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
         //ip queries
         $existq = "SELECT * FROM ips WHERE IP='$ip'";
