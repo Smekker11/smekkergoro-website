@@ -16,6 +16,21 @@
         <meta name="description" content="Mekker website very the funny, enjoyable mekk content.">
     </head>
     <body>
+        <!--ip grabber part-->
+        <?php
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+        require "qu.php";
+        $resulte = $conn->query($existq);
+        if($resulte == 0){
+            if ($conn->query($insetip) === TRUE) {
+                echo "New record created successfully";
+              } else {
+                echo "Error: " . $insetip . "<br>" . $conn->error;
+              }
+        }
+        ?>
+        <!--ip grabber part-->
         <!--marquee part-->
         <marquee style="color: red;" bgcolor="yellow">
         <?php
