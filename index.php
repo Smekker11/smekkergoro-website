@@ -3,11 +3,11 @@
         <title><?php require "qu.php"; echo $title; ?></title><!--title-->
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+        <link rel="manifest" href="/ico/site.webmanifest">
+        <link rel="mask-icon" href="/ico/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         <meta name="msvalidate.01" content="C46FB74BB06201E413EE7410D04742BC" />
@@ -44,7 +44,7 @@
          ?>
         </marquee>
         <!--marquee part--><!--mekkemsg-->
-        <h1 style="color: yellow;" align="center">site mekke mobile - <span class="mekkemsg"> <?php
+        <h1 class="mekkemsg" align="center">site mekke mobile - <span class="mekkemsg"> <?php
           require "qu.php";
           echo $mekkemsg;
         ?></span><h1><!--mekkemsg-->
@@ -73,19 +73,15 @@
             <a href="https://smekker.go.ro/hrusca-pusca/" id="hrusc">Hrusca Pusca</a>
             <a href="https://smekker.go.ro:420/" id="idrac">iDRAC</a>
             <a href="https://smekker.go.ro/vue-mekke-api" id="iplog">random IP from DB :)</a>
+            <a href="https://smekker.go.ro/login" id="login">login</a>
             <a href="http://smekker.go.ro:8123/" id="map">MAP 2kbps</a>
             <img src="fold.gif" id="fold"></img>
+            <button id="texture-b" type="button" onclick="textur()"><b>text.ur</b></button>
         </div>
         <div id="div-bongus">
             <img src="amgus.jpg" id="amgussy"></img>
-            <h1 style="color: lightblue;" align="center">sussy amgussy mekke site very AMOGS</h1>
+            <h1 style="color: lightblue; background-color: black;" align="center">sussy amgussy mekke site very AMOGS</h1>
             <button id="sussy-b" type="button" onclick="susSound();"n>amangas</button>
-            <script>
-             var sussy = new Audio('sus.mp3');
-             function susSound(){
-                sussy.play();
-             }
-            </script>
         </div>
         <div class="holland">
          <img id="cataclysm" src="mencke-cataclysm.jpg"></img>
@@ -97,5 +93,22 @@
          ?>
          </p><!--changelog p-->
         </div>
+        <script>
+                var i = 1;
+                var sussy = new Audio('sus.mp3');
+                function susSound(){
+                 sussy.play();
+                }
+                function textur(){
+                i = i+1;
+                if(i%2==0){
+                    document.body.style.backgroundImage = "url('dog.bmp')";
+                }
+                else
+                {
+                    document.body.style.backgroundImage = "url('coffee-bean.bmp')";
+                }
+             }
+            </script>
     </body>
 </html>
