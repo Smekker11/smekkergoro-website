@@ -49,7 +49,7 @@
           echo $mekkemsg;
         ?></span><h1><!--mekkemsg-->
         <div id="ppl-msg">
-        <h3 style="color: red; background-color: #F9A03F;" align="center">
+        <h3 id="guestmsg" align="center">
             <?php
             require "qu.php";
             echo $guestusr;

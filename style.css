@@ -133,3 +133,13 @@ body{
     padding: 10px;
     background: rgb(156, 81, 44, 0.5);
 }
+#guestmsg{
+    animation: cur 5s infinite;
+    animation-direction: alternate;
+    color: red; background-color: #F9A03F;
+    display: inline-block;
+}
+@keyframes cur {
+    50%  {transform: rotate(20deg);}
+    100%  {transform: rotate(-20deg);}    
+}
