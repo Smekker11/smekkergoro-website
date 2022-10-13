@@ -36,7 +36,7 @@
         ?>
         <!--ip grabber part-->
         <!--marquee part-->
-        <marquee style="color: red;" bgcolor="yellow">
+        <marquee style="color: #77FF94;" bgcolor="#07090F">
         <?php
          $ip = $_SERVER['REMOTE_ADDR'];
          $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
@@ -56,7 +56,7 @@
             ?>
         </h3>
         <form method="post" action="qu.php">
-            <label for="guestusr">modify this message:</label><br>
+            <label for="guestusr" style="color: #77FF94;">modify this message:</label><br>
             <input type="text" id="guestusr-i" name="guestusr">
             <input type="submit" value="Submit">
         </div>
@@ -68,8 +68,8 @@
                 echo $ip;
                 ?>
             </h5>
-            <h5 id="plinks" style="color: orange;">PAGE LINKS:</h5>
-            <a href="https://github.com/Smekker11/" id="github">Github</a>
+            <h5 id="plinks" style="color:  #07090F; background-color: #77FF94;">PAGE LINKS:</h5>
+            <a href="https://github.com/Smekker11/" id="github">>> Github <<</a>
             <a href="https://smekker.go.ro/hrusca-pusca/" id="hrusc">Hrusca Pusca</a>
             <a href="https://smekker.go.ro:420/" id="idrac">iDRAC</a>
             <a href="https://smekker.go.ro/vue-mekke-api" id="iplog">random IP from DB :)</a>
@@ -80,13 +80,13 @@
         </div>
         <div id="div-bongus">
             <img src="amgus.jpg" id="amgussy"></img>
-            <h1 style="color: lightblue; background-color: black;" align="center">sussy amgussy mekke site very AMOGS</h1>
+            <h1 style="color: #77FF94; background-color: #07090F;" align="center">sussy amgussy mekke site very AMOGS</h1>
             <button id="sussy-b" type="button" onclick="susSound();"n>amangas</button>
         </div>
         <div class="holland">
          <img id="cataclysm" src="mencke-cataclysm.jpg"></img>
-         <h1 align="center" style="color: red; background-color: orange;">Changelog:</h1>
-         <p align="center" style="color: black; background-color: green;"><!--changelog p-->
+         <h1 align="center" style="color: #77FF94; background-color: #07090F;">Changelog:</h1>
+         <p align="center" style="color: black; background-color:  #77FF94;"><!--changelog p-->
          <?php 
         require "qu.php";
         echo $changelog;
