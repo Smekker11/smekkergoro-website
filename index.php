@@ -75,6 +75,9 @@
             <a href="https://smekker.go.ro/vue-mekke-api" id="iplog">random IP from DB :)</a>
             <a href="https://smekker.go.ro/login" id="login">login</a>
             <a href="http://smekker.go.ro:8123/" id="map">MAP 2kbps</a>
+            <hr class="pacan-l">
+            <a href="https://smekker.go.ro/lucky-mekke-charm" class="pacan-l">lucky mekke charm</a>
+            <a href="https://smekker.go.ro/book-of-smek" class="pacan-l">book of smek</a>
             <img src="fold.gif" id="fold"></img>
             <button id="texture-b" type="button" onclick="textur()"><b>text.ur</b></button>
         </div>

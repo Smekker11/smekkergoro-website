@@ -10,6 +10,14 @@ body{
     margin: auto;
     width: 80%;
 }
+.pacan-l{
+    position: relative;
+    text-align: center;
+    display: block;
+    color: #77FF94;
+    bottom: 60px;
+    font-size: 22px;
+}
 .mekkemsg{
     color: #77FF94;
     background-color: #07090F;
