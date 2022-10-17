@@ -1,3 +1,4 @@
+/* Main webpage css */
 body{
     background-color: #07090F;
 }
@@ -151,13 +152,57 @@ body{
     background-color: #07090F;
 }
 #guestmsg{
-    animation: cur 5s infinite;
+    animation: goofyaah 5s infinite;
     animation-direction: alternate;
     color: #77FF94; 
     background-color: #07090F;
     display: inline-block;
 }
-@keyframes cur {
+@keyframes goofyaah {
     50%  {transform: rotate(20deg);}
     100%  {transform: rotate(-20deg);}    
+}
+/* Privacy policy css section */
+@keyframes marqueeanimc {
+    0% {color: red; background-color: yellow;}
+    50% {color: yellow; background-color: red;}
+    100% {color: red; background-color: yellow;}
+
+}
+@keyframes marqueeanimt {
+    0% {color: red; background-color: blue;}
+    50% {color: blue; background-color: red;}
+    100% {color: red; background-color: blue;}
+
+}
+#pp-marquee{
+    animation: marqueeanimc 5s infinite;
+    position: relative;
+    top: 0;
+}
+#pp-main-div{
+    position:relative;
+    margin: auto;
+    width: 80%;
+    border-radius: 25px;
+    border: 3px goldenrod solid;
+    background-color: #1e1e1e;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+}
+#pp-h1{
+    position: relative;
+    color: goldenrod;
+}
+#pp-p{
+    position: relative;
+    color: #07090F;
+    background-color: goldenrod;
+}
+#pp-img{
+    position: relative;
+    display: block;
+    margin: auto; 
+    height: 70%;
+    width: 100%;
 }
