@@ -59,6 +59,8 @@
             <label for="guestusr" style="color: #77FF94;">modify this message:</label><br>
             <input type="text" id="guestusr-i" name="guestusr">
             <input type="submit" value="Submit">
+        </form>
+        <h6 style="color: #77FF94;">I am not responsible for any message the users of this website leave here.</h6>
         </div>
         <div id="div-menu">
         <img src="figyelem.gif" id="figyelem"></img>
@@ -77,6 +79,7 @@
             <a href="http://smekker.go.ro:8123/" id="map">MAP 2kbps</a>
             <a id="hrusc" href="/privacy-policy.php">Privacy Policy</a>
             <hr class="pacan-l">
+            <a href="https://smekker.go.ro/isto" class="pacan-l">Proiect ISTORIE</a>
             <a href="https://smekker.go.ro/lucky-mekke-charm" class="pacan-l">lucky mekke charm</a>
             <a href="https://smekker.go.ro/book-of-smek" class="pacan-l">book of smek</a>
             <img src="fold.gif" id="fold"></img>
